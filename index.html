@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>GPA Calculator - UAH</title>
+        <link rel="stylesheet" href="res/style.css">
+        <script type="text/javascript" src="res/calculator.js"></script>
+    </head>
+    <body>
+        <datalist id="grades">
+            <option value="A">
+            <option value="B">
+            <option value="C">
+            <option value="D">
+            <option value="F">
+        </datalist>
+        <datalist id="credit-hours">
+            <option value="4">
+            <option value="3">
+            <option value="2">
+            <option value="1">
+        </datalist>
+        <div id="content">
+            <div id="header">
+                <div id="header-holder">
+                    <h3>UAH GPA Calculator</h3>
+                </div>
+            </div>
+            <div id="input-holder">
+                <div id="input-section">
+                    <h4>Number of Classes</h4>
+                    <input id="numClasses"></input>
+                    <button onclick="addClasses()">ADD CLASSES</button>
+                </div>
+            </div>
+            <div id="table">
+                <table id="table-e">
+                    <tr class="table-header">
+                        <td class="name-col">Class Name</td>
+                        <td>Letter Grade</td>
+                        <td>Credit Hours</td>
+                    </tr>
+                    <tr class="table-content">
+                        <td class="name-col">
+                            <input></input>
+                        </td>
+                        <td>
+                            <input list="grades">
+                        </td>
+                        <td>
+                            <input list="credit-hours">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="results">
+                <h4 class="gpa-result">GPA: 0.0</h4>
+                <button onclick="calculateGPA()">CALCULATE</button>
+            </div>
+        </div>
+        <div id="template">
+            <table>
+                <tbody>
+                    <tr class="table-content">
+                        <td class="name-col">
+                            <input></input>
+                        </td>
+                        <td>
+                            <input list="grades">
+                        </td>
+                        <td>
+                            <input list="credit-hours">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

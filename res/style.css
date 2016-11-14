@@ -1,0 +1,127 @@
+
+body {
+    font-family: Helvetica;
+    text-align: center;
+    position: relative;
+    color: ghostwhite;
+    z-index: -1;
+    text-shadow: 0 0 1px 1px black;
+}
+
+input {
+    width: 100%;
+    text-align: center;
+}
+
+#content{
+    background: gray;
+    width: 520px;
+    height: 720px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 2px 2px rgba(90, 90, 90, 0.4);
+    border: 1px solid rgb(110, 110, 110);
+    text-shadow:
+    -1px -1px 0 #5b5b5b,
+    1px -1px 0 #5b5b5b,
+    -1px 1px 0 #5b5b5b,
+    1px 1px 0 #5b5b5b; 
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+    box-shadow: 0 0 2px 2px rgb(90, 90, 90);
+    z-index: 1;
+    position: relative;
+}
+
+#header #header-holder {
+    display: inline-block;
+}
+
+#header h3 {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+#input-holder {
+    width: 100%;
+    height: 8%;
+    background: dimgray;
+    position: absolute;
+}
+
+#input-section {
+    display: inline;
+}
+
+#input-section h4{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    padding-right: 4%;
+    vertical-align: middle;
+}
+
+#input-section input {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#table {
+    position: absolute;
+    top: 18%;
+    box-shadow: 0 0 2px 2px rgb(90, 90, 90);
+    width: 100%;
+    height: calc(72% - 4px);
+    z-index: 0;
+    overflow-y: scroll;
+}
+
+#table table {
+    background: rgb(39, 104, 209);
+    padding: 5px;
+    margin: 4px;
+    box-shadow: 0 0 2px 2px dimgray;
+    border: 1px solid rgb(100, 100, 100);
+}
+
+#table table td {
+    text-align: center;
+    padding: 5px;
+}
+
+.name-col {
+    width: 45%;
+}
+
+#results {
+    border: 2px ridge rgba(190, 190, 190, 0.35);
+    width: calc(100% - 4px);
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 2px 2px dimgray;
+    z-index: 1;
+    background: gray;
+}
+
+#results h4 {
+    margin: 10px;
+    height: 30%;
+}
+
+#results button {
+    margin: 0;
+    height: 30%;
+}
+
+#template {
+    visibility: hidden;
+}
