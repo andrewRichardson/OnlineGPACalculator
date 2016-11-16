@@ -13,7 +13,7 @@ college career, and looks sleek while doing it.
 
 TASKS:
 
-[x] - Design Page
-[x] - Design Table Inner Workings
-[x] - Implement Previous Two
-[ ] - Continue to Provide Updates
+- [x] Design Page
+- [x] Design Table Inner Workings
+- [x] Implement Previous Two
+- [ ] Continue to Provide Updates
